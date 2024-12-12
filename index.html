@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pribadi My</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(53, 13, 90);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: blueviolet;
+            padding: 20px;
+            text-align: center;
+        }
+        .feature-img {
+            display: flex;
+            flex-direction: column; /* Elemen sejajar ke bawah di HP */
+            align-items: center; /* Foto tetap di tengah */
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-img img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .feature-text {
+            text-align: left; 
+            padding: 20px;
+        }
+        h3, p {
+            margin: 10px 0;
+        }
+        .fut {
+            display: flex;
+            flex-direction: row; /* Tombol sejajar ke samping */
+            align-items: center; /* Tombol tetap di tengah */
+            justify-content: center; /* Tombol tetap di tengah horizontal */
+            margin-top: 20px;
+        }
+        .fut button {
+            margin: 0 10px; 
+        }
+        .fut button a {
+            text-decoration: none; /* Menghilangkan garis di bawah teks */
+            color: rgb(0, 0, 0); /* Warna teks */
+        }
+        /* Media Query untuk HP */
+        @media (max-width: 768px) {
+            .feature-img {
+                flex-direction: column;
+            }
+            .feature-text {
+                padding: 10px;
+            }
+            .fut {
+                flex-direction: column;
+            }
+            .fut button {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Profile Chan</h2>
+        <p>Chan Thecno</p>
+    </header>
+    <div class="feature-img">
+        <img src="https://i.pinimg.com/736x/5c/84/f6/5c84f6b23e0cb29b4a88ab799f922244.jpg" alt="Foto">
+        <div class="feature-text">
+            <h3>Candri</h3>
+            <p>Saya seorang siswa yang sekolah di bangku SMA N2 siborongborong, yang ingin mengembangkan website yang mungkin berguna untuk kedepannya, saya selalu berusaha dan belajar keras untuk mencapainya.<br>
+            Walaupun saya dengan keadaan ini Saya selalu berusaha untuk mengembangkan impian saya, saya memiliki mimpi untuk menciptakan sebuah website dari SMP tepatnya waktu di kelas 8 (kelas 2 SMP), tetapi pada waktu itu saya belum memiliki laptop dan saya belum mengetahui apa aja yang di perlukan dalam membuat web. Saya dari SMP sudah mencari tahu tentang pembuatan website.</p>
+            <h3>Keahlian</h3>
+            <p>- Web Development: HTML, CSS, React<br>
+               - AI dan Machine Learning sederhana.</p>
+            <h3>Hobi</h3>
+            <p>Ngoding, nonton anime, dan bermain game.</p>
+        </div>
+    </div>
+    <div class="fut">
+        <button>
+            <a href="https://www.instagram.com/can.programming/profilecard/?igsh=Y2l1aXBpNnlxOTg4">Intagram</a>
+        </button>
+        <button>
+            <a href="https://www.tiktok.com/@chan_techno?_t=8s8ssgdxbdg&_r=1">Tiktok</a>
+        </button>
+        <button>
+            <a href="https://youtube.com/@chan_programmer?si=nc37RLOKxBqUS8gR">YouTube</a>
+        </button>
+    </div>
+</body>
+</html>
